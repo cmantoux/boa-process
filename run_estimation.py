@@ -3,6 +3,9 @@ import numpy as np
 import src.estimation
 import src.postprocessing
 
+# Fix the random seed
+np.random.seed(0)
+
 # Read the data file
 O = np.loadtxt("data.csv", delimiter=",")
 
@@ -14,7 +17,8 @@ estimation_result = src.postprocessing.simplify_history(estimation_result, keep_
 
 # Summarizes the MCMC result, and print the output
 summary = src.postprocessing.compute_summary(estimation_result)
-print(summary)
+for key in summary:
+    print(key, ":", summary[key])
 
 # Plot the posterior distributions of p_ext and H
 src.postprocessing.plot_posterior(estimation_result, summary)

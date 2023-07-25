@@ -262,7 +262,13 @@ def plot_posterior(simplified_history, summary, street_names=None, street_design
     plt.show()
     
     plt.figure(figsize=(plot_size,plot_size))
-    M = simplified_history["p_ext"].shape[1]
+    
+    if len(simplified_history["p_ext"].shape) == 1:
+        p_ext_history = simplified_history["p_ext"].reshape(-1,1)
+    else:
+        p_ext_history = simplified_history["p_ext"]
+    M = p_ext_history.shape[1]
+    
     if street_names is None:
         street_names = [None]*M
     cmap = matplotlib.cm.get_cmap("tab20")
@@ -275,7 +281,7 @@ def plot_posterior(simplified_history, summary, street_names=None, street_design
             ls = street_design.loc[street]["linestyle"]
         else:
             color, ls = color_order[m], 0
-        sns.kdeplot(simplified_history["p_ext"][:,m], color=cmap(color), ls=linestyles[ls], label=street)
+        sns.kdeplot(p_ext_history[:,m], color=cmap(color), ls=linestyles[ls], label=street)
     plt.xlim()
     plt.xlabel(r"Value of $p_{ext}$", fontsize=16)
     plt.ylabel("Density", fontsize=16)
