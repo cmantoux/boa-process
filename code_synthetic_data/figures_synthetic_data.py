@@ -2,10 +2,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.pyplot import *
 import matplotlib.gridspec as gridspec
-import pandas as pd
-import seaborn as sns
-from tqdm.auto import *
-from numba import njit
 import xarray as xr
 import pickle
 

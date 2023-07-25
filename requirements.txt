@@ -1,0 +1,7 @@
+python==3.7.13
+numba==0.56.4
+numpy==1.21.5
+matplotlib==3.4.3
+tqdm==4.65.0
+xarray==0.20.2
+seaborn==0.12.2

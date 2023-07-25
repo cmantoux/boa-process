@@ -4,7 +4,6 @@ import matplotlib.pyplot as plt
 from matplotlib.pyplot import *
 import seaborn as sns
 from tqdm.auto import *
-from numba import njit
 
 
 ############################################################
