@@ -1,0 +1,133 @@
+Capsella bursa-pastoris_BARO-1.csv
+Capsella bursa-pastoris_BARO-2.csv
+Capsella bursa-pastoris_BERC-1.csv
+Capsella bursa-pastoris_BERC-2.csv
+Capsella bursa-pastoris_CHAR-1.csv
+Capsella bursa-pastoris_CHAR-2.csv
+Capsella bursa-pastoris_DAUM-1.csv
+Capsella bursa-pastoris_DAUM-2.csv
+Capsella bursa-pastoris_DAUM-3.csv
+Capsella bursa-pastoris_KESS-1.csv
+Capsella bursa-pastoris_KESS-2.csv
+Capsella bursa-pastoris_POMM-1.csv
+Capsella bursa-pastoris_POMM-2.csv
+Capsella bursa-pastoris_RBER-1.csv
+Capsella bursa-pastoris_RBER-2.csv
+Capsella bursa-pastoris_REUI-1.csv
+Chenopodium album_BARO-1.csv
+Chenopodium album_BERC-1.csv
+Chenopodium album_RAPE-1.csv
+Chenopodium album_REUI-1.csv
+Conyza_BARO-1.csv
+Conyza_BARO-2.csv
+Conyza_BERC-1.csv
+Conyza_BERC-2.csv
+Conyza_CHAR-1.csv
+Conyza_DAUM-1.csv
+Conyza_DAUM-2.csv
+Conyza_DAUM-3.csv
+Conyza_KESS-1.csv
+Conyza_KESS-2.csv
+Conyza_MONT.csv
+Conyza_POMM-1.csv
+Conyza_POMM-2.csv
+Conyza_RAPE-1.csv
+Conyza_RAPE-2.csv
+Conyza_RBER-1.csv
+Conyza_RBER-2.csv
+Conyza_REUI-1.csv
+Conyza_REUI-2.csv
+Conyza_TAIN-1.csv
+Hordeum murinum_BARO-1.csv
+Hordeum murinum_BARO-2.csv
+Hordeum murinum_BERC-1.csv
+Hordeum murinum_BERC-2.csv
+Hordeum murinum_CHAR-1.csv
+Hordeum murinum_CHAR-2.csv
+Hordeum murinum_DAUM-1.csv
+Hordeum murinum_DAUM-2.csv
+Hordeum murinum_DAUM-3.csv
+Hordeum murinum_KESS-1.csv
+Hordeum murinum_KESS-2.csv
+Hordeum murinum_RAPE-1.csv
+Hordeum murinum_RBER-1.csv
+Hordeum murinum_RBER-2.csv
+Hordeum murinum_REUI-1.csv
+Hordeum murinum_REUI-2.csv
+Lactuca serriola_BARO-1.csv
+Plantago lanceolata_RAPE-1.csv
+Plantago major_BARO-1.csv
+Plantago major_POMM-2.csv
+Plantago major_RAPE-1.csv
+Plantago major_REUI-1.csv
+Plantago major_REUI-2.csv
+Polygonum aviculare_BARO-1.csv
+Polygonum aviculare_BARO-2.csv
+Polygonum aviculare_BERC-1.csv
+Polygonum aviculare_BERC-2.csv
+Polygonum aviculare_CHAR-1.csv
+Polygonum aviculare_CHAR-2.csv
+Polygonum aviculare_DAUM-1.csv
+Polygonum aviculare_DAUM-3.csv
+Polygonum aviculare_RAPE-1.csv
+Polygonum aviculare_RAPE-2.csv
+Polygonum aviculare_REUI-1.csv
+Polygonum aviculare_REUI-2.csv
+Senecio inaequidens_BARO-1.csv
+Senecio inaequidens_BERC-2.csv
+Senecio vulgaris_BARO-2.csv
+Senecio vulgaris_KESS-1.csv
+Senecio vulgaris_POMM-1.csv
+Senecio vulgaris_RAPE-1.csv
+Senecio vulgaris_RBER-2.csv
+Senecio vulgaris_REUI-1.csv
+Sisymbrium irio_BARO-1.csv
+Sisymbrium irio_BARO-2.csv
+Sisymbrium irio_BERC-1.csv
+Sisymbrium irio_BERC-2.csv
+Sisymbrium irio_DAUM-1.csv
+Sisymbrium irio_KESS-1.csv
+Sisymbrium irio_MONT.csv
+Sisymbrium irio_REUI-1.csv
+Stellaria media_BARO-1.csv
+Stellaria media_BARO-2.csv
+Stellaria media_BERC-1.csv
+Stellaria media_BERC-2.csv
+Stellaria media_CHAR-1.csv
+Stellaria media_CHAR-2.csv
+Stellaria media_DAUM-1.csv
+Stellaria media_DAUM-2.csv
+Stellaria media_DAUM-3.csv
+Stellaria media_KESS-1.csv
+Stellaria media_KESS-2.csv
+Stellaria media_MONT.csv
+Stellaria media_POMM-1.csv
+Stellaria media_POMM-2.csv
+Stellaria media_RAPE-1.csv
+Stellaria media_RAPE-2.csv
+Stellaria media_RBER-1.csv
+Stellaria media_RBER-2.csv
+Stellaria media_REUI-1.csv
+Stellaria media_REUI-2.csv
+Stellaria media_TAIN-1.csv
+Stellaria media_TAIN-2.csv
+Taraxacum_BARO-1.csv
+Taraxacum_BARO-2.csv
+Taraxacum_BERC-1.csv
+Taraxacum_BERC-2.csv
+Taraxacum_CHAR-1.csv
+Taraxacum_CHAR-2.csv
+Taraxacum_DAUM-1.csv
+Taraxacum_DAUM-2.csv
+Taraxacum_DAUM-3.csv
+Taraxacum_KESS-1.csv
+Taraxacum_KESS-2.csv
+Taraxacum_MONT.csv
+Taraxacum_POMM-1.csv
+Taraxacum_RAPE-1.csv
+Taraxacum_RAPE-2.csv
+Taraxacum_RBER-1.csv
+Taraxacum_RBER-2.csv
+Taraxacum_REUI-1.csv
+Taraxacum_REUI-2.csv
+Veronica persica_RAPE-1.csv

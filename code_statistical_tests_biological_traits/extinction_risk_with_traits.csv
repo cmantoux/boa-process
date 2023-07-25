@@ -1,0 +1,22 @@
+Dissemination,Massegraine,Seed_longevity,poll_vect2,poll_vect,Ellen_chaleur,Resistance_chaleur,Maximum_height,debf2,debf,finf,TempF,PeriodeF,nb_pied_arbre,species,Risquemoyenlocal,Risquemoyen
+anemochorous,0.098515455,L ,insect,insect,5,sensible,40,early,3,12,9,long,182.333,Capsella bursa-pastoris,0.7156179451875,0.0351780351875
+barochorous,0.647,L ,noinsect,wind,5,sensible,100,late,6,10,4,medium,75.222,Chenopodium album,0.7096917005,0.75303
+anemochorous,0.045625,S,insect,insect,5,sensible,80,late,7,10,3,short,260.333,Conyza,0.76126080375,0.04964936885
+epizoochorous,9.26934026,S,noinsect,wind,8,resistant,50,early,4,8,3,short,322.66,Hordeum murinum,0.368994367,0.0155874579375
+anemochorous,0.5437,S,noinsect,selfed,5,sensible,200,late,7,10,3,short,45.55,Lactuca serriola,0.868835398,0.967938238
+barochorous,1.616750877,S,noinsect,wind,5,sensible,40,early,4,10,6,medium,25.222,Plantago lanceolata,0.725211717,1
+barochorous,0.267838095,L ,noinsect,wind,5,sensible,60,late,5,10,6,medium,71.44,Plantago major,0.8391210426,0.8303607896
+barochorous,1.82,L ,noinsect,selfed,5,sensible,80,late,5,11,6,medium,145.33,Polygonum aviculare,0.68277827275,0.717326666666667
+anemochorous,0.278533333,L ,insect,insect,7,resistant,100,late,7,10,3,medium,35.222,Senecio inaequidens,0.825182017,1
+anemochorous,0.269,S,noinsect,selfed,5,sensible,60,early,1,12,11,long,89.6,Senecio vulgaris,0.854168542666667,0.176693766833333
+anemochorous,0.093733333,S,insect,insect,6,sensible,80,early,4,7,3,short,122.11,Sisymbrium irio,0.759854865,0.207067219125
+barochorous,0.3852,S,insect,insect,5,sensible,40,early,1,12,11,long,283.33,Stellaria media,0.672483926136364,0.0000197542727272727
+anemochorous,.5316,L,insect,insect,5,sensible,40,early,4,6,2,short,449.88,Taraxacum,0.497319668263158,0.000353232052631579
+epizoochorous,0.565,S,insect,insect,5,sensible,40,early,3,10,7,long,45.6,Veronica persica,0.614780391,0.07115157
+epizoochorous,7.4854,S,noinsect,wind,6,sensible,100,late,5,8,3,short,24.11,Bromus sterilis,0.711536197,0.0906326035
+autochorous,1.086875,L,insect,insect,5,sensible,50,early,4,9,5,medium,35.333,Geranium molle,0.787177187,0.273897969333333
+barochorous,1.975111111,S,noinsect,wind,5,sensible,70,late,5,10,5,medium,51.11,Lolium perenne,0.83768168625,0.54650890325
+epizoochorous,0.200185714,S,noinsect,wind,7,resistant,40,late,6,10,4,medium,41.66,Parietaria judaica,0.7524176345,0.529020979
+barochorous,0.223701579,L,noinsect,wind,5,sensible,30,early,1,12,11,long,763.666,Poa annua,0.204556886590909,0
+anemochorous,0.270333333,S,insect,insect,5,sensible,90,late,5,9,4,medium,25.55,Sisymbrium officinale,0.7554067815,0.8848621675
+barochorous,0.325,L,insect,insect,6,sensible,90,late,6,10,4,medium,166.11,Sonchus oleraceus,0.785340058538462,0.751526146538462
