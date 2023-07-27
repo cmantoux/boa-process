@@ -30,7 +30,7 @@ eps_range   = [0., 0.01, 0.02, 0.05] # Noisy BOA
 p_c = np.array([0.461, 0.652, 0.743, 0.796, 0.831, 0.856, 0.874, 0.888, 0.899, 0.909, 0.916])
 
 results = ["p_ext_mean", "p_ext_std", "rmse_p_ext", "H_recovery", "H_inf",
-           "extinction_test_1", "extinction_test_2", "eps_mean", "eps_std", "rmse_eps"]
+           "GER", "MaxGER", "eps_mean", "eps_std", "rmse_eps"]
 results += [f"p(H={h})" for h in range(H_max+1)]
 results += [f"s_{h}_mean" for h in range(H_max+1)]
 results += [f"s_{h}_rmse" for h in range(H_max+1)]
@@ -110,8 +110,8 @@ for sim_index in tqdm(sim_indices):
     result_array.data[z, a, b, c, d, e, f, g, results.index("p_ext_std")] = hist["p_ext"].std()
     result_array.data[z, a, b, c, d, e, f, g, results.index("H_recovery")] = H_recovery
     result_array.data[z, a, b, c, d, e, f, g, results.index("H_inf")] = H_inf
-    result_array.data[z, a, b, c, d, e, f, g, results.index("extinction_test_1")] = test_1
-    result_array.data[z, a, b, c, d, e, f, g, results.index("extinction_test_2")] = test_2
+    result_array.data[z, a, b, c, d, e, f, g, results.index("GER")] = test_1
+    result_array.data[z, a, b, c, d, e, f, g, results.index("MaxGER")] = test_2
     result_array.data[z, a, b, c, d, e, f, g, results.index("eps_mean")] = hist["eps"].mean()
     result_array.data[z, a, b, c, d, e, f, g, results.index("eps_std")] = hist["eps"].std()
     result_array.data[z, a, b, c, d, e, f, g, results.index("rmse_eps")] = rmse_eps

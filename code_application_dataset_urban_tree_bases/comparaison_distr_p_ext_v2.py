@@ -24,7 +24,7 @@ for rue in liste_rues:
         liste_std_hors_rue = []
         
         for row in reader:
-            if row[1] != 'extinction_test_1':
+            if row[1] != 'GER':
                 if row[0][0:4] == rue:
                     liste_ext_rue.append(float(row[3]))
                     liste_std_rue.append(float(row[4]))
@@ -52,7 +52,7 @@ for rue in liste_rues:
         liste_std_hors_rue = []
         
         for row in reader:
-            if row[1] != 'extinction_test_1':
+            if row[1] != 'GER':
                 if row[0][0:4] == rue:
                     liste_ext_rue.append(float(row[3]))
                     liste_std_rue.append(float(row[4]))

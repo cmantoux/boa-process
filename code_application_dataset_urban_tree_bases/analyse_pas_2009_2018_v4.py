@@ -91,15 +91,15 @@ for selected_plant in liste_especes_2009_2018 :
     # Create CSV with numerical results
     import pandas as pd
     df = pd.DataFrame(index=street_names, data={
-        "extinction_test_1": [summary["extinction_test_1"][s] for s in street_names],
-        "extinction_test_2": [summary["extinction_test_2"][s] for s in street_names],
+        "GER": [summary["GER"][s] for s in street_names],
+        "MaxGER": [summary["MaxGER"][s] for s in street_names],
         "p_ext_mean": [summary["p_ext_mean"][s] for s in street_names],
         "p_ext_std": [summary["p_ext_std"][s] for s in street_names],
         "log_lk": [summary["log_lk"][s] for s in street_names],
     })
     df.to_csv(f"{output_folder}/{simulation_id}_summary.csv")
 
-    print(f"\nextinction_test_1, extinction_test_2, p_ext_mean, p_ext_std, and log_lk were saved to {output_folder}/{simulation_id}_summary.csv")
+    print(f"\nGER, MaxGER, p_ext_mean, p_ext_std, and log_lk were saved to {output_folder}/{simulation_id}_summary.csv")
 
 
     # Clean distribution plots for H and p_ext

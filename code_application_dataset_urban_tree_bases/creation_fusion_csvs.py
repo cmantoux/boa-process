@@ -10,7 +10,7 @@ for espece in liste_especes_2009_2018:
     reader = csv.reader(csv_file)
     
     for row in reader:
-        if row[1] != 'extinction_test_1':
+        if row[1] != 'GER':
             liste_extinction_probas.append([espece]+[row[0][0:4]]+row[0:4])
     
     csv_file.close()
@@ -20,7 +20,7 @@ for espece in liste_especes_2014_2018:
     reader = csv.reader(csv_file)
     
     for row in reader:
-        if row[1] != 'extinction_test_1':
+        if row[1] != 'GER':
             liste_extinction_probas.append([espece]+[row[0][0:4]]+row[0:4])
             
     csv_file.close()
