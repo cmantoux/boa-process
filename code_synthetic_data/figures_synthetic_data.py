@@ -50,7 +50,6 @@ E41_results = load_file(f"{result_folder}/E41_results.pkl")
 E42_results = {}
 for H in H_range:
     E42_results[H] = load_file(f"{result_folder}/E42_results_{H}.pkl")
-    E42_results[H] = load_file(f"{result_folder}/E42_results_{H}.pkl")
 
 E5_results_noisy    = load_file(f"{result_folder}/E5_results_noisy.pkl")
 E5_results_nonnoisy = load_file(f"{result_folder}/E5_results_nonnoisy.pkl")
@@ -183,6 +182,61 @@ for N in [50,100]:
         close("all")
 
 ## 2. Noisy data
+
+# Average MaxGER distribution across experiments with eps=0.05
+
+fig_count = 0
+figure_titles = [
+    "Fig. C.9",
+    "Fig. C.10",
+    "Fig. C.11",
+    "Fig. C.12",
+]
+for N in [50, 100]:
+    for T in [5, 10]:
+        figure(figsize=(10,8))
+        for i, H in enumerate(H_range):
+            subplot(2,2,i+1)
+
+            a = E41_results.sel(N=N, T=T, result="extinction_test_2").mean(dim=["s", "k"])
+            a_inf = E41_results.sel(N=N, T=T, result="extinction_test_2").quantile(q=0.10, dim=["s", "k"])
+            a_sup = E41_results.sel(N=N, T=T, result="extinction_test_2").quantile(q=0.90, dim=["s", "k"])
+            b = E42_results[H].sel(N=N, T=T, result="extinction_test_2").mean(dim=["s", "k"])
+            b_inf = E42_results[H].sel(N=N, T=T, result="extinction_test_2").quantile(q=0.10, dim=["s", "k"])
+            b_sup = E42_results[H].sel(N=N, T=T, result="extinction_test_2").quantile(q=0.90, dim=["s", "k"])
+
+            x1, y1 = a.coords["p_ext"].data, a.sel(H=H).data
+            x2, y2 = b.coords["p_ext"].data, b.sel(H=H).data
+            y1_inf, y1_sup = a_inf.sel(H=H).data, a_sup.sel(H=H).data
+            y2_inf, y2_sup = b_inf.sel(H=H).data, b_sup.sel(H=H).data
+            x = np.concatenate((x1, x2))
+            y = np.concatenate((y1, y2))
+            y_inf = np.concatenate((y1_inf, y2_inf))
+            y_sup = np.concatenate((y1_sup, y2_sup))
+            order = x.argsort()
+            x = x[order]
+            y = y[order]
+            y_inf = y_inf[order]
+            y_sup = y_sup[order]
+
+            for e, eps in enumerate(a.coords["eps"].data):
+                if eps == 0.05:
+                    plot(x, 1-y[:,e], label=fr"$\varepsilon$ = {eps}", ls="-")
+                    print(1-y_sup[:,e] - (1-y_inf[:,e]))
+                    fill_between(x=x, y1=1-y_inf[:,e], y2=1-y_sup[:,e], alpha=0.5)
+            axvline(p_c[H], color="black", label=f"$p_c({H})$")
+            xlabel(r"Patch extinction probability $p_{ext}$", fontsize=15)
+            xticks(np.linspace(0.1, 0.9, 9))
+            ylim(-0.05,1.05)
+            ylabel("Average MaxGER", fontsize=15)
+            legend(fontsize=13)
+            title(f"H = {H}", fontsize=15)
+        tight_layout()
+        savefig(f"{figures_folder}/{figure_titles[i]} - MaxGER distribution - N={N} - T={T}.pdf")
+        fig_count += 1
+        show()
+
+# Average MaxGER across experiments, with varying eps
 
 N = 50
 T = 10

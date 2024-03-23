@@ -1,26 +1,31 @@
 library(ggplot2)
-library(multcomp)
-library(car)
 
-myData = read.csv(file = 'estimated_extinction_risk.csv', header = TRUE, dec = ',', sep  = ',')
+theme_set(
+  theme_classic() + 
+    theme(legend.position = "right")
+)
 
-#Generation Figure 3b
-a = ggplot(myData, aes(x = reorder(species, risque_extinction_locale, FUN = median), y = risque_extinction_locale))
-a = a + geom_boxplot(alpha = 1)
-a = a + theme(axis.text.x = element_text(angle = 90, size = 12), axis.text.y = element_text(size = 12))
-a = a + theme(axis.title = element_text(size = 14))
-a = a + labs(x = 'Species', y = 'LER')
-a = a + guides(fill=FALSE)
+data = read.csv(file = 'prob_crit_H.csv', header = TRUE, dec = '.', sep = ',')
 
-a
+fig = ggplot(data) + 
+  aes(x = H, y = Proba_critique) + 
+  geom_point() +
+  labs(x = 'Maximal dormancy duration H', y = bquote('Critical patch extinction probability'~p[c](H)))
 
-#Generation FIgure 3a
-b = ggplot(myData, aes(x = reorder(species, risque_extinction_globale, FUN = median), y = risque_extinction_globale))
-b = b + geom_boxplot(alpha = 1)
-b = b + theme(axis.text.x = element_text(angle = 90, size = 12), axis.text.y = element_text(size = 12))
-b = b + theme(axis.title = element_text(size = 14))
-b = b + labs(x = 'Species', y = 'MaxGER')
-b = b + geom_hline(aes(yintercept = 0.125), color = "red",size = 1)
-b = b + guides(fill=FALSE)
+fig = fig + ylim(0,1)
 
-b
+fig = fig + scale_x_continuous(expand = c(0,0), breaks = c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10), limits = c(0,10.1))
+
+fig = fig + scale_y_continuous(expand = c(0,0), limits = c(0,1))
+
+fig = fig + geom_line(size = 0.5, colour = 'black')
+
+fig = fig + geom_hline(aes(yintercept = 0.46), color = "red", linetype = "dashed", size = 1)
+
+fig = fig + geom_hline(aes(yintercept = 1), color = "black",size = 0.25)
+
+fig = fig + theme(axis.text.x = element_text(size = 14), axis.text.y = element_text(size = 14))
+fig = fig + theme(legend.text = element_text(size = 14), legend.title = element_text(size = 16))
+fig = fig + theme(axis.title = element_text(size = 16))
+
+fig

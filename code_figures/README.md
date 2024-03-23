@@ -2,15 +2,15 @@
 
 ## Main paper
 
-- Figure 2 : generation_figure_2.R 
+- Figure 3 : generation_figure_3.R 
 Uses the csv file "prob_crit_H.csv"
-- Figure 3 : generation_figure_3.R
+- Figure 3 : generation_figures_biological_traits.R
 Uses the csv file "estimated_extinction_risk.csv"
 
 ## Supporting Information A
 
-- Figures A.2 and A.3 : generation_figure_A_2.R
+- Figure A.2 : generation_figures_biological_traits.R
 Uses the csv file "extinction_risk_with_traits.csv"
-- Figure A.4 : generation_figure_A_4.R
+- Figure A.3 : generation_figure_A_3.R
 Uses the csv file "smd_proba_ext.csv"
 
